@@ -151,13 +151,51 @@
 
 
 // lecture 19: react component challenge for exercise number 17 
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+// import  MyApp from './MyApp';
+// ReactDOM.render(
+//     <React.Fragment>
+//     <MyApp></MyApp>
+//     </React.Fragment>,
+// document.getElementById('root')
+// );
+
+// lecture 20: import export in react js 
+//   import React from 'react';
+//   import ReactDOM from 'react-dom'
+//   import l1,{l2,myName,myNames} from './MyApp'
+
+//   ReactDOM.render(
+//       <React.Fragment>
+//           <h1>my favourite language</h1>
+//           <ol>
+//               <li>C</li>
+//               <li>{l1}</li>
+//               <li>{l2}</li>
+//               <li>{myName()}</li>
+//               <li>{myNames()}</li>
+//           </ol>
+//       </React.Fragment>,
+//       document.getElementById('root')
+//   )
+
+// lecture 21: calculator challenge in reactjs 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import  MyApp from './MyApp';
+import add,{sub,div,mul} from './MyApp'
+
+
 ReactDOM.render(
     <React.Fragment>
-    <MyApp></MyApp>
+        <h1>The calculation is.....</h1>
+        <circle>
+            <li>the sum of two num is {add(20,40)}</li>
+            <li>the sub of two num is {sub(3,2)}</li>
+            <li>the mul of two num is {mul(20,40)}</li>
+            <li>the div of two num is {div(40,11)}</li>
+        </circle>
     </React.Fragment>,
-document.getElementById('root')
-);
+    document.getElementById('root')
+)
